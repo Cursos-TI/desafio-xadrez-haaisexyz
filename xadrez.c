@@ -10,14 +10,14 @@ int main()
     for (int torre = 0; torre < 5; torre++)
     {
 
-        printf("Direita (Torre) \n");
+        printf("Direita\n");
     }
 
     int bispo = 0; // Movimento do Bispo (5 casas diagonais usando o while-do)
 
     do
     {
-        printf("Esquerda, Cima (Bispo)\n");
+        printf("Esquerda, Cima\n");
         bispo++;
 
     } while (bispo < 5);
@@ -28,8 +28,18 @@ int main()
 
     {
         rainha++;
-        printf("Esquerda (Rainha) \n");
+        printf("Esquerda\n");
     }
 
+    int cavalocompleto = 1; // Movimento do Cavalo (em L, dois cima e um esquerda)
+
+    while (cavalocompleto--)
+    {
+        for (int baixo = 0; baixo < 2; baixo++)
+        {
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
     return 0;
 }
